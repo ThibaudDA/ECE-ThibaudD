@@ -373,12 +373,7 @@ if (rayonFeutre < 13) {
   stop_moteurs();
   //freinageActif();
 
-
-  
 }
-
-
-
     else if (rayonFeutre == 13) {
         // Rayon trop petit ou nul, rotation sur place
         rotationSurPlace(360, sensHoraire);
@@ -386,8 +381,6 @@ if (rayonFeutre < 13) {
         return;
     }
 
-
-    
 else {
     float perimetreCentre = 2.0 * PI * rayonCentre;
     long ticksCible = perimetreCentre / TICK_TO_CM;
@@ -428,9 +421,6 @@ else {
     }
     }
 }
-
-
-
 
 
 
@@ -641,14 +631,10 @@ client.println("</form>");
     client.println("<input type='submit' value='Rose des vents'>");
     client.println("</form>");
 
-
-    
     client.println("</body></html>");
     client.stop();
   }
 }
-
-
 
 float getFilteredAngle() {
   int16_t x, y, z;
@@ -718,4 +704,5 @@ void writeRegister(uint8_t reg, uint8_t val) {
   Wire.write(val);
   Wire.endTransmission();
 }
+
 
