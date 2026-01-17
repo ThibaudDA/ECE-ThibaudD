@@ -4,8 +4,8 @@
 #include <math.h>
 
 // ==== Réseau Wi-Fi ====
-const char* ssid = "leboss";
-const char* password = "1234567890";
+const char* ssid = "///////";
+const char* password = "///////";
 WiFiServer server(80);
 
 // ==== Broches moteurs ====
@@ -718,3 +718,4 @@ void writeRegister(uint8_t reg, uint8_t val) {
   Wire.write(val);
   Wire.endTransmission();
 }
+
